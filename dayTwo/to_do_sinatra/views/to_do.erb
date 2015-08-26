@@ -1,10 +1,23 @@
 <html>
-<head>
-  <title>Cool ToDo List</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <meta charset="utf-8">
-</head>
-<body>
-  <h1>HOLA!</h1>
-</body>
+
+  <head>
+    <title>Cool ToDo List</title>
+    <link rel="stylesheet" type="text/css" href="to_do.css">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <% @list.each do |item| %>
+    <ul class="task_list">
+      <li> <%= item %> </li>
+    </ul>
+    <% end %>
+
+    <form action="/add_new" method="post">
+
+      <input type="text" name="new_task" placeholder="I have to...">
+      <input class="add_button" type="submit" name="submit" value="Add">
+    </form>
+  </body>
+
 </html>

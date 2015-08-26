@@ -1,0 +1,10 @@
+ul.list {
+  list-style-type: none;
+  text-align: center;
+  font: 20px bold;
+  color: #0080ff;
+}
+
+.add_button {
+  position: center;
+}
