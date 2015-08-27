@@ -1,0 +1,8 @@
+Class Calculator
+
+    methods:
+         -add
+         -sub
+         -mul
+         -div
+end

@@ -1,0 +1,35 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+#phrase_div {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+#button_div {
+
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+    color: gray;
+
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+list-style-type: none;
+}

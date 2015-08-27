@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Randome Phrase</title>
+    <link rel="stylesheet" type="text/css" href="sinatra_index.css">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <h1>Random Phrases</h1>
+
+    <div id="phrase_div">
+      <%= @my_random_phrase %> <br>
+    </div>
+    <a id="button_div" href="<%= @refresh %>">MORE PHRASES</a>   
+
+<%-# this part add phrases-%>
+    <h2>Add Phrase</h2>
+    <form action="/add_phrase" method="post">
+        <label for="phrase">Phrase:</label>
+        <input type="text" name="phrase">
+        <input name="commit" type="submit" value="Submit" />
+    </form>
+
+    <% @phrases.each do |phrase| %>
+      <ul>
+        <li><%= phrase %></li>
+      </ul>    
+      <% end %>
+    </div>
+  </body>
+</html>

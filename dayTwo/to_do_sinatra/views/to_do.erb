@@ -11,13 +11,18 @@
     <ul class="task_list">
       <li> <%= item %> </li>
     </ul>
+    <form action="/done_task" method="post">
+      <input type="hidden" name="">
+      <input type="submit" name="remove_task" value="done">
+    </form>
     <% end %>
 
     <form action="/add_new" method="post">
-
       <input type="text" name="new_task" placeholder="I have to...">
       <input class="add_button" type="submit" name="submit" value="Add">
     </form>
+
+
   </body>
 
 </html>
