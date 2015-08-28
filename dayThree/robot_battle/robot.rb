@@ -18,4 +18,3 @@ class Robot
     @life -= attacks[:definitive]
   end
 end
-

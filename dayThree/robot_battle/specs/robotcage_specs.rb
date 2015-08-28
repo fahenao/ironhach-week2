@@ -5,7 +5,7 @@ RSpec.describe RobotCage do
 
   describe "#RobotCage methods" do
     it "show a hash with two robots in it" do
-      expect(cage.show_contenders).to eq({robotA: 200, robotB: 200})
+      expect(cage.fight_status).to eq({robotA: 200, robotB: 200})
     end
 
     it "does something" do

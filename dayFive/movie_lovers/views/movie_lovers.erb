@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="text/css" href="movie_lovers.css">
+</head>
+
+<body>
+  <h1>Movie Lovers</h1>
+
+    <form action="/imdb_search" method="post">
+      <input type="text" name="user_input">
+      <input type="submit" name="commit" value="search">
+    </form>
+
+  <% if @url != nil %>
+  <div class="posters_div">
+    <% @url.each do |link| %>
+      <img src="<%= link %>">
+    <% end %>
+  </div>
+  <% end %>
+
+
+</body>
+</html>
